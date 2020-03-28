@@ -31,6 +31,7 @@ export default function Incidents() {
         setIncidents([...incidents, ...response.data]);
         setTotal(response.headers['x-total-count']);
         setPage(page + 1);
+        //
         setLoading(false);
     }
 
